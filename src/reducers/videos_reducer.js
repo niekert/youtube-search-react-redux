@@ -10,7 +10,6 @@ export default function(state = defaultState, action) {
     case VIDEOS_RECEIVED:
       return Object.assign({}, state, {
         videos: action.payload,
-        selectedVideo: action.payload.length ? action.payload[0] : null,
       });
       break;
     case VIDEO_SELECTED:
